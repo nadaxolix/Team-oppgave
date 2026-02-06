@@ -496,3 +496,8 @@ main {
         max-width: 100%;
     }
 }
+/*/ SVG /*/
+    .icon{
+        width: 100%;
+        max-width: 24px;
+}
