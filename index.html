@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTO - Tech Conference 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="header">
+    <div class="header-container">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-logo">
+                <svg
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        aria-label="LogoIcon">
+                    <rect x="3" y="6" width="4" height="18" rx="1" fill="black"/>
+                    <rect x="10" y="3" width="4" height="24" rx="1" fill="gray"/>
+                    <rect x="17" y="8" width="4" height="17" rx="1" fill="silver"/>
+                </svg>
+                <h1>EVENTO</h1>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+            <label for="menu-toggle" class="hamburger" aria-label="Open menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="#events">Events</a></li>
+                <li><a href="#venues">Venues</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- jag lagt till form och input text-->
+                <!--                <form class="search-bar">-->
+                <!--                    <input type="text"-->
+                <!--                           placeholder="Search for events"-->
+                <!--                           aria-label="Search for events"-->
+                <!--                    >-->
+                <!--                </form>-->
+
+                <div class="nav-extra">
+                    <button class="profile-button" aria-label="ProfileButton">
+                        <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"></circle>
+                            <line x1="16" y1="16" x2="21" y2="21" stroke="currentColor" stroke-width="2"
+                                  stroke-linecap="round"></line>
+                        </svg>
+                    </button>
+                    <button class="user-button" aria-label="UserButton">
+                        <svg
+                                class="user-icon"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                        >
+
+                            <circle cx="12" cy="8" r="4"></circle>
+                            <path d="m4 20c0-4 4-6 8-6s8 2 8 6"></path>
+
+                        </svg>
+                    </button>
+                </div>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+    <section id="event-hero">
+        <div class="event-container">
+            <div id="event-name">
+                <h2>Tech Conference 2025</h2>
+            </div>
+            <div id="event-details">
+                <p>📅 March 15-17, 2025</p> 📍 Oslo Congress Center 🎤 12 Speakers 💰 From €299</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="register-section" class="cards-section">
+        <div id="register-card" class="card">
+            <button class="btn-primary">Register</button>
+
+            <fieldset>
+                <legend>Ticket Type</legend>
+                <div class="radio-group">
+                    <input type="radio" id="standard" name="ticket" value="Standard">
+                    <label for="standard">Standard</label><br>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="vip" name="ticket" value="VIP">
+                    <label for="vip">VIP</label><br>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="premium" name="ticket" value="Premium">
+                    <label for="premium">Premium</label><br>
+                </div>
+            </fieldset>
+            <div class="spinner-field">
+                <label for="quantity">
+                    Quantity
+                </label>
+                <div class="spinner">
+                        <button class="btn-sm" type="button"
+                            title="Decrement ticket quantity">
+                        <span aria-hidden="true">
+                      −
+                    </span>
+                        </button>
+
+                    <input id="quantity"
+                           role="spinbutton"
+                           type="text"
+                           size="4"
+                           inputmode="numeric"
+                           aria-valuemin="1"
+                           aria-valuemax="8"
+                           aria-valuenow="1"
+                           value="1">
+                    <button class="btn-sm" type="button"
+                            title="Increment ticket quantity">
+                    <span aria-hidden="true">
+              +
+            </span>
+                    </button>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="diet">Dietary needs</label>
+                    <select id="diet" name="diet">
+                        <option value="">Select...</option>
+                        <option value="none">No preference</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="gluten-free">Gluten-free</option>
+                    </select>
+                </div>
+
+            </form>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree to terms*</label>
+            </div>
+
+            <button class="btn-primary">Submit Registration</button>
+        </div>
+    </section>
+        <aside class="sidebar">
+
+            <section class="sidebar-card">
+                <h2>
+                    About the Event
+                </h2>
+
+                <p>
+                    Join 500+ developers for three days of hands-on workshops,
+                    inspiring keynotes and valuable networking opportunities.
+                </p>
+            </section>
+
+            <section class="sidebar-card">
+                <h2>
+                    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                        <circle cx="10" cy="6" r="3" />
+                        <rect x="5" y="11" width="10" height="6" />
+                    </svg>
+                    Featured Speakers
+                </h2>
+
+
+                <ul class="speaker-list">
+                    <li class="speaker">
+                        <div>
+                          <img class="speaker-photo" src="speaker1.jpg">
+                        </div>
+                        <span>Geir</span>
+
+                        <label class="heart-button">
+                          <input type="radio" name="speaker">
+                          <svg viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                                    2 5.42 4.42 3 7.5 3
+                                    9.24 3 10.91 3.81 12 5.08
+                                    13.09 3.81 14.76 3 16.5 3
+                                    19.58 3 22 5.42 22 8.5
+                                    22 12.28 18.6 15.36 13.45 20.04
+                                    L12 21.35z"></path>
+                          </svg>
+                        </label>
+                    </li>
+                    <li class="speaker">
+                        <div class=>
+                          <img class="speaker-photo" src="speaker4.jpg">
+                        </div>
+                        <span>Terje</span>
+
+                        <label class="heart-button">
+                          <input type="radio" name="speaker">
+                          <svg viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                                    2 5.42 4.42 3 7.5 3
+                                    9.24 3 10.91 3.81 12 5.08
+                                    13.09 3.81 14.76 3 16.5 3
+                                    19.58 3 22 5.42 22 8.5
+                                    22 12.28 18.6 15.36 13.45 20.04
+                                    L12 21.35z"></path>
+                          </svg>
+                        </label>
+                    </li>
+                    <li class="speaker">
+                        <div>
+                          <img class="speaker-photo" src="speaker3.jpg">
+                        </div>
+                        <span>Ole</span>
+                        
+                        <label class="heart-button">
+                          <input type="radio" name="speaker">
+                          <svg viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                                    2 5.42 4.42 3 7.5 3
+                                    9.24 3 10.91 3.81 12 5.08
+                                    13.09 3.81 14.76 3 16.5 3
+                                    19.58 3 22 5.42 22 8.5
+                                    22 12.28 18.6 15.36 13.45 20.04
+                                    L12 21.35z"></path>
+                          </svg>
+                        </label>
+            </section>
+
+            <section class="sidebar-card">
+                <h2>
+                    Schedule Highlights
+                </h2>
+
+
+                <ul class="schedule-list">
+                    <li>Day 1: Frontend Trends</li>
+                    <li>Day 2: Performance Optimization</li>
+                    <li>Day 3: Workshop Sessions</li>
+                </ul>
+
+                <a href="#" class="agenda-link">View Full Schedule →</a>
+            </section>
+        </aside>
+</main>
+
+</body>
+</html>
